@@ -28,10 +28,32 @@
 // })
 // code.log();
 
-const Logger=require("./code");
+// const Logger=require("./code");
+// const logger=new Logger();
+// logger.on("message",(data)=>{
+//     console.log("Event Handled",data);
+// })
+// logger.log();
+//const EventEmitter=require("events");
+//const log=require("./coding");
+//const evt=new EventEmitter();
+// evt.on("message",()=>{
+//     console.log("Handled..")
+// })
+//log();
+// const coding=require("./coding");
+// coding.evt.on("message",()=>{
+//     console.log("Event handled")
+// })
+
+// coding.log();
+
+const Logger=require("./coding");
 const logger=new Logger();
-logger.on("message",(data)=>{
-    console.log("Event Handled",data);
+logger.on("message",()=>{
+    console.log("Handled")
 })
 logger.log();
+
+
 
