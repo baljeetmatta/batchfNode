@@ -1,6 +1,7 @@
 const express=require("express");
 const profileRoute=express.Router();
 profileRoute.get("/",(req,res)=>{
+    
     res.send("Profile Home Page");
 })
 profileRoute.get("/details",(req,res)=>{
